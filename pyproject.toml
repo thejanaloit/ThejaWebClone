@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "theja-webclone"
-version = "0.1.0"
+version = "0.2.0"
 description = "Fused website clone toolkit + MCP from Theja's Website cloning skills chat"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -24,3 +24,6 @@ theja-webclone = "theja_webclone.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.setuptools.package-data]
+theja_webclone = ["data/*.json"]

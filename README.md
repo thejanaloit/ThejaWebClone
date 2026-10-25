@@ -59,7 +59,9 @@ Add to `~/.cursor/mcp.json`:
 }
 ```
 
-Tools: `twc_mirror`, `twc_snapshot`, `twc_rewrite`, `twc_serve`, `twc_status`, `twc_chat_lessons`.
+Tools: `twc_mirror`, `twc_snapshot`, `twc_rewrite`, `twc_serve_hint`, `twc_status`, `twc_chat_lessons`, `twc_list_connected_mcps`, `twc_get_connected_mcp`, `twc_export_connected_mcps`.
+
+Connected Cursor MCP inventory (38 servers, secrets redacted) ships in `data/connected-mcps.json` — see [docs/CONNECTED-MCPS.md](docs/CONNECTED-MCPS.md).
 
 ## Cursor skill
 

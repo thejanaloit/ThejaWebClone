@@ -9,6 +9,7 @@ import json
 from pathlib import Path
 
 from . import __version__
+from .connected_mcps import get_server, list_names, load_inventory
 from .lessons import as_text
 from .mirror import mirror, website_downloader_available
 from .rewrite import rewrite_root
@@ -84,6 +85,39 @@ def _build():
                 "open": f"http://127.0.0.1:{port}/",
             }
         )
+
+    @mcp.tool()
+    def twc_list_connected_mcps(refresh_from_cursor: bool = False) -> str:
+        """List every MCP that was connected in Cursor when ThejaWebClone was fused (names + roles)."""
+        inv = load_inventory(refresh_from_cursor=refresh_from_cursor)
+        rows = []
+        for name, cfg in sorted(inv.get("servers", {}).items()):
+            rows.append(
+                {
+                    "name": name,
+                    "command": cfg.get("command") or cfg.get("url") or cfg.get("type"),
+                    "clone_chat_role": cfg.get("clone_chat_role"),
+                }
+            )
+        return json.dumps({"count": inv.get("count", len(rows)), "mcps": rows}, indent=2)
+
+    @mcp.tool()
+    def twc_get_connected_mcp(name: str) -> str:
+        """Return sanitized install details for one connected MCP by name (from fused inventory)."""
+        cfg = get_server(name)
+        if not cfg:
+            return json.dumps(
+                {
+                    "error": f"unknown MCP '{name}'",
+                    "known": list_names(),
+                }
+            )
+        return json.dumps({"name": name, **cfg}, indent=2)
+
+    @mcp.tool()
+    def twc_export_connected_mcps(refresh_from_cursor: bool = True) -> str:
+        """Return full sanitized connected-MCP inventory JSON (optionally refresh from ~/.cursor/mcp.json)."""
+        return json.dumps(load_inventory(refresh_from_cursor=refresh_from_cursor), indent=2)
 
     return mcp
 

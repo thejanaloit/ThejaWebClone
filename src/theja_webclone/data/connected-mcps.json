@@ -1,0 +1,513 @@
+{
+  "source": "C:\\Users\\ThejanaD\\.cursor\\mcp.json",
+  "chat_id": "782d09ea-95b5-4772-83f7-702400140b32",
+  "chat_title": "Website cloning skills",
+  "count": 38,
+  "servers": {
+    "AIThejaBrowser": {
+      "command": "node",
+      "args": [
+        "E:/AITheja-browser/bin/aitheja.js",
+        "mcp",
+        "start"
+      ],
+      "env": {
+        "AITHEJA_ROOT": "E:/AITheja-browser",
+        "AITHEJA_TARGET_ROOT": "E:/ThejaBackBone",
+        "AITHEJA_BASE_URL": "https://vkyc-test.ipay.lk",
+        "AITHEJA_HEADED": "1",
+        "AITHEJA_WATCH_MS": "800",
+        "npm_config_update_notifier": "false"
+      },
+      "clone_chat_role": "headed browser automation"
+    },
+    "Ai-FusionXupgrade": {
+      "command": "node",
+      "args": [
+        "E:/pathum-tbb/mcp/server.js"
+      ],
+      "env": {
+        "AI_FUSIONX_UPGRADE_ROOT": "E:/pathum-tbb"
+      },
+      "clone_chat_role": "TBB / Ai-FusionX upgrade"
+    },
+    "QAFusionX": {
+      "command": "npx",
+      "args": [
+        "--yes",
+        "tsx",
+        "C:\\Users\\ThejanaD\\QAFusionX\\src\\index.ts"
+      ],
+      "env": {
+        "THEJA_TCB_ROOT": "E:/ThejaCentralBrain",
+        "THEJA_COMPANY_ROOT": "E:/ThejaCompany",
+        "QAFUSIONX_HEADED": "1",
+        "JIRA_EMAIL": "thejanaD@lolctech.com",
+        "QAFUSIONX_SAMPLE_ORIGIN": "http://127.0.0.1:43181",
+        "JIRA_BASE_URL": "https://lolcgroupdev.atlassian.net",
+        "QAFUSIONX_WORKSPACE": "E:/QAFusionX/workspaces/PF-57868",
+        "AITHEJA_ROOT": "E:/AITheja-browser",
+        "JIRA_PROJECT_KEY": "<redacted>",
+        "THEJAD_REPO_ROOT": "E:/internetBanking",
+        "TBB_VAULT_DIR": "E:/ThejaBackBone/.tbb/vault",
+        "THEJA_ULTIMATE_ROOT": "E:/ThejaUltimate",
+        "THEGOD_ROOT": "E:/theGod-",
+        "HYPERSPACE_GATEWAY_URL": "http://127.0.0.1:8080/v1",
+        "AITHEJA_BRAIN_ROOT": "C:/Users/ThejanaD/IdeaProjects/aitheja-brain",
+        "THEJAD_PACKAGE_ROOT": "E:/internetBanking/thejad",
+        "THEJAD_FULL_ACCESS": "1",
+        "THEJAD_DEVICE_ROOTS": "E:\\;C:\\Users\\ThejanaD;D:\\",
+        "THEJAD_AUTO_POD": "1",
+        "TBB_SECRET_AUTO_APPROVE": "<redacted>",
+        "npm_config_update_notifier": "false",
+        "QAFUSIONX_HOME": "C:\\Users\\ThejanaD\\QAFusionX",
+        "THEJA_BACKBONE_ROOT": "E:/ThejaBackBone",
+        "QAFUSIONX_CRAWL_SCOPE": "qa-pack"
+      },
+      "clone_chat_role": "QA crawl screenshots/maps (not site mirror)"
+    },
+    "SecTheja": {
+      "command": "node",
+      "args": [
+        "E:/SecTheja/bin/sectheja.js",
+        "mcp",
+        "start"
+      ],
+      "env": {
+        "SECTHEJA_ROOT": "E:/SecTheja",
+        "npm_config_update_notifier": "false"
+      },
+      "clone_chat_role": "security scans"
+    },
+    "ThejaAppBridges": {
+      "command": "node",
+      "args": [
+        "E:/ThejaUltimate/gateways/app-bridges/mcp/server.mjs"
+      ],
+      "env": {
+        "THEJA_ULTIMATE_ROOT": "E:/ThejaUltimate",
+        "npm_config_update_notifier": "false"
+      },
+      "clone_chat_role": "app bridges / codex"
+    },
+    "ThejaCentralBrain": {
+      "command": "node",
+      "args": [
+        "E:/ThejaCentralBrain/bin/tcb.js",
+        "mcp",
+        "start"
+      ],
+      "env": {
+        "AITHEJA_BRAIN_ROOT": "C:/Users/ThejanaD/IdeaProjects/aitheja-brain",
+        "THEJA_COMPANY_ROOT": "E:/ThejaCompany",
+        "THEGOD_ROOT": "E:/theGod-",
+        "AITHEJA_ROOT": "E:/AITheja-browser",
+        "THEJAD_REPO_ROOT": "E:/internetBanking",
+        "THEJA_ULTIMATE_ROOT": "E:/ThejaUltimate",
+        "HYPERSPACE_GATEWAY_URL": "http://127.0.0.1:8080/v1",
+        "THEJA_TCB_ROOT": "E:/ThejaCentralBrain",
+        "THEJAD_PACKAGE_ROOT": "E:/internetBanking/thejad",
+        "THEJAD_FULL_ACCESS": "1",
+        "THEJAD_DEVICE_ROOTS": "E:\\;C:\\Users\\ThejanaD;D:\\",
+        "THEJAD_AUTO_POD": "1",
+        "npm_config_update_notifier": "false",
+        "THEJA_BACKBONE_ROOT": "E:/ThejaBackBone"
+      },
+      "clone_chat_role": "central brain think/ingest"
+    },
+    "ThejaD": {
+      "command": "node",
+      "args": [
+        "E:/internetBanking/thejad/bin/thejad.js",
+        "mcp",
+        "start"
+      ],
+      "env": {
+        "AITHEJA_BRAIN_ROOT": "C:/Users/ThejanaD/IdeaProjects/aitheja-brain",
+        "THEJA_COMPANY_ROOT": "E:/ThejaCompany",
+        "THEGOD_ROOT": "E:/theGod-",
+        "AITHEJA_ROOT": "E:/AITheja-browser",
+        "THEJAD_REPO_ROOT": "E:/internetBanking",
+        "THEJA_ULTIMATE_ROOT": "E:/ThejaUltimate",
+        "HYPERSPACE_GATEWAY_URL": "http://127.0.0.1:8080/v1",
+        "THEJA_TCB_ROOT": "E:/ThejaCentralBrain",
+        "THEJAD_PACKAGE_ROOT": "E:/internetBanking/thejad",
+        "THEJAD_FULL_ACCESS": "1",
+        "THEJAD_DEVICE_ROOTS": "E:\\;C:\\Users\\ThejanaD;D:\\",
+        "THEJAD_AUTO_POD": "1",
+        "npm_config_update_notifier": "false",
+        "THEJA_BACKBONE_ROOT": "E:/ThejaBackBone"
+      },
+      "clone_chat_role": "ThejaD device/mesh helpers"
+    },
+    "ThejaThinkingPattern": {
+      "command": "node",
+      "args": [
+        "E:/ThejaThinkingPattern/bin/ttp.js",
+        "mcp",
+        "start"
+      ],
+      "env": {
+        "AITHEJA_BRAIN_ROOT": "C:/Users/ThejanaD/IdeaProjects/aitheja-brain",
+        "THEJA_COMPANY_ROOT": "E:/ThejaCompany",
+        "THEGOD_ROOT": "E:/theGod-",
+        "AITHEJA_ROOT": "E:/AITheja-browser",
+        "THEJAD_REPO_ROOT": "E:/internetBanking",
+        "THEJA_ULTIMATE_ROOT": "E:/ThejaUltimate",
+        "HYPERSPACE_GATEWAY_URL": "http://127.0.0.1:8080/v1",
+        "THEJA_TCB_ROOT": "E:/ThejaCentralBrain",
+        "THEJAD_PACKAGE_ROOT": "E:/internetBanking/thejad",
+        "THEJAD_FULL_ACCESS": "1",
+        "THEJAD_DEVICE_ROOTS": "E:\\;C:\\Users\\ThejanaD;D:\\",
+        "THEJAD_AUTO_POD": "1",
+        "npm_config_update_notifier": "false",
+        "THEJA_BACKBONE_ROOT": "E:/ThejaBackBone"
+      },
+      "clone_chat_role": "thinking pattern MCP"
+    },
+    "ThejaUltimate": {
+      "command": "node",
+      "args": [
+        "E:/ThejaUltimate/bin/theja-ultimate.js",
+        "mcp",
+        "start"
+      ],
+      "env": {
+        "AITHEJA_BRAIN_ROOT": "C:/Users/ThejanaD/IdeaProjects/aitheja-brain",
+        "THEJA_COMPANY_ROOT": "E:/ThejaCompany",
+        "THEGOD_ROOT": "E:/theGod-",
+        "AITHEJA_ROOT": "E:/AITheja-browser",
+        "THEJAD_REPO_ROOT": "E:/internetBanking",
+        "THEJA_ULTIMATE_ROOT": "E:/ThejaUltimate",
+        "HYPERSPACE_GATEWAY_URL": "http://127.0.0.1:8080/v1",
+        "THEJA_TCB_ROOT": "E:/ThejaCentralBrain",
+        "THEJAD_PACKAGE_ROOT": "E:/internetBanking/thejad",
+        "THEJAD_FULL_ACCESS": "1",
+        "THEJAD_DEVICE_ROOTS": "E:\\;C:\\Users\\ThejanaD;D:\\",
+        "THEJAD_AUTO_POD": "1",
+        "npm_config_update_notifier": "false",
+        "THEJA_BACKBONE_ROOT": "E:/ThejaBackBone"
+      },
+      "clone_chat_role": "ultimate mesh status/search"
+    },
+    "ThejaWebClone": {
+      "command": "py",
+      "args": [
+        "-3.11",
+        "-m",
+        "theja_webclone.mcp_server"
+      ],
+      "env": {
+        "PYTHONIOENCODING": "utf-8",
+        "THEJA_WEBCLONE_ROOT": "C:/Users/ThejanaD/Projects/ThejaWebClone"
+      },
+      "clone_chat_role": "fused clone MCP (this package)"
+    },
+    "UITheja": {
+      "command": "node",
+      "args": [
+        "E:/UITheja/bin/uitheja.js",
+        "mcp",
+        "start"
+      ],
+      "env": {
+        "UITHEJA_ROOT": "E:/UITheja",
+        "UITHEJA_PREFERRED_MODEL": "gemini-3.1-pro",
+        "UITHEJA_THEME": "loit-crm-fintech",
+        "npm_config_update_notifier": "false"
+      },
+      "clone_chat_role": "UI theme/architecture"
+    },
+    "atlassian": {
+      "url": "https://mcp.atlassian.com/v1/mcp",
+      "type": "http",
+      "clone_chat_role": "Jira/Confluence"
+    },
+    "aws-mcp": {
+      "command": "uvx",
+      "args": [
+        "mcp-proxy-for-aws@latest",
+        "https://aws-mcp.us-east-1.api.aws/mcp",
+        "--metadata",
+        "INSTALL_SOURCE=aws-cli"
+      ],
+      "env": {
+        "AWS_MCP_PROXY_PROFILES": "ThejanaD"
+      },
+      "clone_chat_role": "AWS MCP proxy"
+    },
+    "chrome-bridge": {
+      "command": "C:\\Users\\ThejanaD\\.chrome-bridge\\.venv\\Scripts\\python.exe",
+      "args": [
+        "C:\\Users\\ThejanaD\\.chrome-bridge\\mcp_server.py"
+      ],
+      "env": {
+        "PYTHONIOENCODING": "utf-8",
+        "PYTHONUTF8": "1"
+      },
+      "clone_chat_role": "Chrome control for page capture"
+    },
+    "flyctl": {
+      "command": "C:\\Users\\ThejanaD\\.fly\\bin\\flyctl.exe",
+      "args": [
+        "mcp",
+        "server",
+        "--port",
+        "8795"
+      ],
+      "clone_chat_role": "Fly.io"
+    },
+    "fusionx-java-upgrade": {
+      "command": "node",
+      "args": [
+        "E:/fusionXUpgrade/mcp/fusionx-java-upgrade/server.js"
+      ],
+      "env": {
+        "FUSIONX_BACKBONE_ROOT": "E:/fusionXUpgrade/agent-backbone",
+        "FUSIONX_GOLD_ROOT": "E:/fusionXUpgrade/gold-standards",
+        "FUSIONX_SERVICE_ROOT": "E:/fusionXUpgrade/casa-transfer-in",
+        "npm_config_update_notifier": "false"
+      },
+      "clone_chat_role": "FusionX Java upgrade"
+    },
+    "fusionx-qa-agent": {
+      "command": "py",
+      "args": [
+        "E:/FusionXQaAgent/mcp/server.py"
+      ],
+      "env": {
+        "PYTHONPATH": "E:/FusionXQaAgent/src;E:/FusionXQaAgent/vendor/HumanAgent;E:/theGod-/gateways/human-agent",
+        "PYTHONIOENCODING": "utf-8",
+        "THEJA_BACKBONE_ROOT": "E:/ThejaBackBone"
+      },
+      "clone_chat_role": "FusionX QA agent"
+    },
+    "intellij": {
+      "url": "http://127.0.0.1:64342/sse",
+      "clone_chat_role": "IntelliJ bridge"
+    },
+    "jirafusionx": {
+      "command": "node",
+      "args": [
+        "C:/Users/ThejanaD/mcp-repos/jirafusionX/mcp/src/server.js"
+      ],
+      "clone_chat_role": "Jira FusionX laws/gates"
+    },
+    "liqa": {
+      "command": "py",
+      "args": [
+        "-3",
+        "E:/LIQA/mcp/server.py"
+      ],
+      "env": {
+        "PYTHONIOENCODING": "utf-8",
+        "LIQA_HOME": "E:/LIQA",
+        "LIQA_AGENCY_HOME": "E:/agency-agents",
+        "MANUAL_QA_HOME": "E:/ManualQA-Agent",
+        "QAFUSIONX_HOME": "E:/QAFusionX",
+        "LOITKB_HOME": "C:/src/LOITKB",
+        "LOITKB_PRINCIPAL": "liqa",
+        "LOITKB_DATA_DIR": "C:/LIQA-memory",
+        "ARCHIFY_HOME": "E:/LIQA/vendor/archify",
+        "ARCHIFY_UPDATE_CHECK_DISABLED": "1"
+      },
+      "clone_chat_role": "manual QA headed"
+    },
+    "manualqa": {
+      "command": "py",
+      "args": [
+        "E:\\ManualQA-Agent\\mcp\\server.py"
+      ],
+      "env": {
+        "PYTHONIOENCODING": "utf-8",
+        "MQA_HOME": "E:/ManualQA-Agent",
+        "MQA_WORKSPACE": "E:/ManualQA-Agent/workspace/default-run",
+        "MQA_CAPTURE_DIR": "E:/ManualQA-Agent/captures",
+        "MQA_BUILD": "company-final-v3-67",
+        "MQA_RELOAD_TS": "1789247689"
+      },
+      "clone_chat_role": "manual QA company"
+    },
+    "manualqa-legacy": {
+      "command": "py",
+      "args": [
+        "E:/QAFusionX/manualQA/mcp/server.py"
+      ],
+      "env": {
+        "PYTHONIOENCODING": "utf-8",
+        "MANUAL_QA_HOME": "E:/QAFusionX/manualQA",
+        "MANUAL_QA_WORKSPACE": "E:/QAFusionX/manualQA/workspace/default-run",
+        "HUMANIZE_CAPTURE_DIR": "E:/QAFusionX/manualQA/captures"
+      },
+      "clone_chat_role": "legacy manual QA MCP"
+    },
+    "mendeley": {
+      "command": "E:/internetBanking/references/mendeley-mcp-start.cmd",
+      "args": [],
+      "clone_chat_role": "references"
+    },
+    "n8n-mcp": {
+      "command": "E:/QAFusionX/manualQA/scripts/n8n-mcp-start.cmd",
+      "args": [],
+      "env": {
+        "MCP_MODE": "stdio",
+        "LOG_LEVEL": "error",
+        "DISABLE_CONSOLE_OUTPUT": "true",
+        "npm_config_update_notifier": "false",
+        "N8N_API_URL": "http://localhost:5678",
+        "N8N_API_KEY": "<redacted>"
+      },
+      "clone_chat_role": "n8n workflows"
+    },
+    "omniroute": {
+      "command": "C:/Program Files/nodejs/node.exe",
+      "args": [
+        "C:/Users/ThejanaD/AppData/Roaming/npm/node_modules/omniroute/bin/omniroute.mjs",
+        "--mcp"
+      ],
+      "env": {
+        "OMNIROUTE_API_KEY": "<redacted>",
+        "OMNIROUTE_BASE_URL": "http://localhost:20128"
+      },
+      "clone_chat_role": "github skills search / routing; used in discovery"
+    },
+    "oracle-ultimate": {
+      "command": "C:/Python314/python.exe",
+      "args": [
+        "C:/Users/ThejanaD/oracle-sqldev-mcp/oracle_sqldev_mcp/server.py"
+      ],
+      "env": {
+        "PYTHONIOENCODING": "utf-8",
+        "PYTHONPATH": "C:/Users/ThejanaD/oracle-sqldev-mcp",
+        "ORACLE_MCP_CONFIG_DIR": "C:/Users/ThejanaD/.oracle-sqldev-mcp",
+        "ORACLE_MCP_WORKSPACE": "C:/Users/ThejanaD/.oracle-sqldev-mcp/worksheets",
+        "TNS_ADMIN": "C:/Users/ThejanaD/network/admin"
+      },
+      "clone_chat_role": "Oracle Ultimate"
+    },
+    "postman": {
+      "url": "https://mcp.postman.com/mcp",
+      "type": "http",
+      "clone_chat_role": "API collections"
+    },
+    "project-references": {
+      "command": "C:/Python314/python.exe",
+      "args": [
+        "E:/internetBanking/references/mcp-server/server.py"
+      ],
+      "env": {
+        "PYTHONIOENCODING": "utf-8"
+      },
+      "clone_chat_role": "project citations"
+    },
+    "ruflo": {
+      "command": "node",
+      "args": [
+        "E:/internetBanking/scripts/ruflo-mcp-start.cjs"
+      ],
+      "clone_chat_role": "ruflo mesh"
+    },
+    "sqlcl": {
+      "command": "C:/Users/ThejanaD/AppData/Local/Microsoft/WinGet/Packages/Oracle.SQLcl_Microsoft.Winget.Source_8wekyb3d8bbwe/sqlcl/bin/sql.exe",
+      "args": [
+        "-mcp"
+      ],
+      "clone_chat_role": "Oracle SQLcl"
+    },
+    "stitch": {
+      "command": "npx.cmd",
+      "args": [
+        "-y",
+        "@_davideast/stitch-mcp@latest",
+        "proxy"
+      ],
+      "env": {
+        "STITCH_API_KEY": "<redacted>",
+        "STITCH_USE_SYSTEM_GCLOUD": "1",
+        "GOOGLE_CLOUD_PROJECT": "sl-vkyc-prod",
+        "STITCH_PROJECT_ID": "sl-vkyc-prod",
+        "CI": "1",
+        "DOTENV_CONFIG_QUIET": "true",
+        "DOTENV_QUIET": "true",
+        "NO_COLOR": "1",
+        "npm_config_update_notifier": "false"
+      },
+      "clone_chat_role": "UI generation from prompts (not live site copy)"
+    },
+    "the-void": {
+      "command": "py",
+      "args": [
+        "E:/FusionXQaAgent/mcp/the_void_server.py"
+      ],
+      "env": {
+        "PYTHONPATH": "E:/FusionXQaAgent/src;E:/FusionXQaAgent/vendor/HumanAgent;E:/theGod-/gateways/human-agent",
+        "PYTHONIOENCODING": "utf-8",
+        "THEJA_BACKBONE_ROOT": "E:/ThejaBackBone"
+      },
+      "clone_chat_role": "void invent/fuse"
+    },
+    "theGod": {
+      "command": "node",
+      "args": [
+        "E:/theGod-/bin/thegod.js",
+        "mcp",
+        "start"
+      ],
+      "env": {
+        "THEGOD_ROOT": "E:/theGod-",
+        "THEJA_ULTIMATE_ROOT": "E:/ThejaUltimate",
+        "THEJAD_REPO_ROOT": "e:/internetBanking",
+        "THEJAD_FULL_ACCESS": "1"
+      },
+      "clone_chat_role": "god mesh / browser assists"
+    },
+    "theja-humanize": {
+      "command": "py",
+      "args": [
+        "E:/ThejaUltimate/gateways/humanize-mcp/server.py"
+      ],
+      "env": {
+        "PYTHONIOENCODING": "utf-8"
+      },
+      "clone_chat_role": "desktop eyes/brain/hands"
+    },
+    "theja-token-manager": {
+      "command": "node",
+      "args": [
+        "C:\\Users\\ThejanaD\\Projects\\theja-token-manager\\src\\server.js"
+      ],
+      "clone_chat_role": "vault/find stashed tools; used in clone discovery"
+    },
+    "tradingview": {
+      "command": "C:/Users/ThejanaD/.local/bin/tradingview-mcp.exe",
+      "args": [
+        "stdio"
+      ],
+      "clone_chat_role": "market data (unrelated to clone)"
+    },
+    "unbrowse": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "unbrowse",
+        "mcp"
+      ],
+      "env": {
+        "UNBROWSE_MCP_SURFACE": "agent",
+        "HEADLESS": "false",
+        "npm_config_update_notifier": "false"
+      },
+      "clone_chat_role": "browserless scrape (auth stub in session)"
+    },
+    "updateFusionX": {
+      "command": "node",
+      "args": [
+        "C:/Users/ThejanaD/mcp-repos/updateFusionX/mcp/server.js"
+      ],
+      "env": {
+        "UPDATEFUSIONX_KIT_ROOT": "C:/Users/ThejanaD/mcp-repos/updateFusionX"
+      },
+      "clone_chat_role": "updateFusionX kit"
+    }
+  }
+}

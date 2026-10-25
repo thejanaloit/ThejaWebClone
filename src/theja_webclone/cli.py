@@ -43,6 +43,9 @@ def main(argv: list[str] | None = None) -> int:
 
     sub.add_parser("lessons", help="Print lessons from the source chat")
     sub.add_parser("status", help="Show install status")
+    mc = sub.add_parser("mcps", help="List fused connected MCP inventory")
+    mc.add_argument("--refresh", action="store_true", help="Refresh from ~/.cursor/mcp.json")
+    mc.add_argument("--name", default=None, help="Show one MCP by name")
 
     args = p.parse_args(argv)
 
@@ -78,6 +81,7 @@ def main(argv: list[str] | None = None) -> int:
 
     if args.cmd == "status":
         from .mirror import website_downloader_available
+        from .connected_mcps import load_inventory
 
         try:
             import playwright  # noqa: F401
@@ -85,16 +89,28 @@ def main(argv: list[str] | None = None) -> int:
             pw = True
         except Exception:
             pw = False
+        inv = load_inventory()
         print(
             json.dumps(
                 {
                     "version": __version__,
                     "website_downloader": website_downloader_available(),
                     "playwright": pw,
+                    "connected_mcps": inv.get("count", 0),
                 },
                 indent=2,
             )
         )
+        return 0
+
+    if args.cmd == "mcps":
+        from .connected_mcps import get_server, load_inventory
+
+        if args.name:
+            cfg = get_server(args.name)
+            print(json.dumps(cfg or {"error": "not found"}, indent=2))
+            return 0 if cfg else 1
+        print(json.dumps(load_inventory(refresh_from_cursor=args.refresh), indent=2))
         return 0
 
     return 2
