@@ -1,0 +1,10 @@
+{
+  "ThejaWebClone": {
+    "command": "py",
+    "args": ["-3.11", "-m", "theja_webclone.mcp_server"],
+    "env": {
+      "PYTHONIOENCODING": "utf-8",
+      "THEJA_WEBCLONE_ROOT": "C:/Users/ThejanaD/Projects/ThejaWebClone"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "theja-webclone"
+version = "0.1.0"
+description = "Fused website clone toolkit + MCP from Theja's Website cloning skills chat"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "thejanaloit" }]
+dependencies = [
+  "requests>=2.32",
+]
+
+[project.optional-dependencies]
+render = ["playwright>=1.45"]
+mcp = ["mcp>=1.0"]
+all = ["playwright>=1.45", "mcp>=1.0"]
+
+[project.scripts]
+theja-webclone = "theja_webclone.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
